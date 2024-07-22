@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import ru.netology.services.FreelancerService;
 
 class FreelancerServiceTest {
+  
   @Test
   public void testCase1() {
     FreelancerService service = new FreelancerService();
@@ -18,6 +19,7 @@ class FreelancerServiceTest {
 
     Assertions.assertEquals(expected, actual);
   }
+  
   @Test
   public void testCase2() {
     FreelancerService service = new FreelancerService();
