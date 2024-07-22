@@ -1,41 +1,27 @@
 package ru.netology.services;
 
+public class FreelancerService {
 
-
-
-public class FreelancerService
-{
-
-    public int calculate(int income, int expenses, int threshold)
-    {
+    public int calculate(int income, int expenses, int threshold) {
         int balance = 0;
         int counter = 0;
 
-        for (int i = 0; i < 12; i++)
-        {
+        for (int i = 0; i < 12; i++) {
 
-            if (balance>=threshold)
-
-            {
+            if (balance >= threshold) {
                 // отдыхаем
-            balance -= expenses;
-            balance /= 3;
-            counter ++;
+                balance -= expenses;
+                balance /= 3;
+                counter++;
 
-
-          } else
-            {
+            } else {
                 //работаем
                 //balance = balance + income;
                 balance += income;
                 balance -= expenses;
-
-
             }
-            
+
         }
         return counter;
-
-
     }
 }
